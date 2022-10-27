@@ -1,0 +1,89 @@
+@import '../../theme/colors.scss';
+
+#modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+#modal .mask{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 10;
+}
+
+#modal .content{
+  background-color: $BACKGROUND_LIGHT;
+  z-index: 11;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal .content .title{
+  font-family: TTNorms-Bold;
+  font-size: 22px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+  color: $SECONDARY_TEXT_DARK;
+}
+
+#modal .content input{
+  background-color: #eee;
+  border: none;
+  padding: 12px 24px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+  border-radius: 24px;
+  margin-top: 12px;
+  display: flex;
+  flex: 1;
+  min-width: 250px;
+}
+
+#modal .content input.invalid{
+  box-shadow: 0 0 2px 0 red;
+}
+
+#modal .content .footer{
+  padding: 12px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: stretch;
+}
+
+#modal .content .footer button{
+  font-size: 18px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: $BACKGROUND_DARK;
+  color: $PRIMARY_TEXT_LIGHT;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+#modal .content .footer button:nth-child(2){
+  background-color: #9d2828;
+}
+
+.invalid-message {
+  color: #9d2828;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  #modal {
+    padding: 50px 24px;
+  }
+}

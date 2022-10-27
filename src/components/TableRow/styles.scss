@@ -1,0 +1,41 @@
+@import '../../theme/colors.scss';
+
+.cell img  {
+  width: 100%;
+  height: auto;
+}
+
+.cell.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px
+}
+
+.cell.actions button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #aaa;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.cell.actions button:hover{
+  border: 1px solid transparent;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+  color: $PRIMARY_TEXT_LIGHT
+}
+
+.cell.actions button:first-child:hover{
+  background-color: $BACKGROUND_DARK;
+}
+
+.cell.actions button:nth-child(2):hover{
+  background-color: #9d2828;
+}

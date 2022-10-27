@@ -1,0 +1,30 @@
+@import '../../theme/colors.scss';
+
+#table {
+  background-color: $BACKGROUND_LIGHT;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  min-width: 750px;
+}
+
+#table .row{
+  display: flex;
+  flex: 1;
+  background-color: #e6f4ff;
+  margin: 8px;
+  border-radius: 18px;
+}
+
+#table .cell{
+  display: flex;
+  flex: 1;
+  padding: 12px 12px;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+#table .empty-message{
+  padding: 24px;
+  text-align: center;
+}

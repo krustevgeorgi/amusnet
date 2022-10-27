@@ -1,0 +1,51 @@
+@import '../../theme/colors.scss';
+
+#intro-box{
+  background-color: $BACKGROUND_LIGHT;
+  border-radius: 12px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, .5);
+  padding: 32px;
+  max-width: 350px;
+}
+
+#intro-box > svg{
+  font-size: 36px;
+  color: $BACKGROUND_DARK;
+  margin-bottom: 12px;
+}
+
+#intro-box > svg.check{
+  color: $CALL_TO_ACTION;
+}
+
+#intro-box p.title{
+  font-size: 20px;
+  font-family: TTNorms-Bold;
+  color: $SECONDARY_TEXT_DARK;
+  margin-top: 0;
+}
+
+#intro-box p.instructions{
+  padding: 8px 12px;
+  border: 1px dashed #8e2121;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  font-size: 16px;
+  color: $TERTIARY_TEXT_DARK;
+  font-family: TTNorms-Light;
+  line-height: 22px;
+}
+
+#intro-box .instructions span,
+#intro-box .instructions a{
+  text-decoration: underline;
+  color: $BACKGROUND_DARK;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#intro-box .instructions span:hover,
+#intro-box .instructions a:hover{
+  color: #4f73de;
+}

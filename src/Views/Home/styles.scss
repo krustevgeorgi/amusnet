@@ -1,0 +1,53 @@
+@import '../../theme/colors.scss';
+
+#home {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home #hero{
+  min-height: calc(100vh - 64px);
+  background-color: #122E82;
+  background-image: url('../../assets/images/fruits.png');
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+#connect-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#connect-section h2{
+  color: #fff;
+  font-family: TTNorms-Regular;
+  font-size: 42px;
+  margin: 0;
+}
+
+#connect-section  h1{
+  color: #fff;
+  font-family: TTNorms-Bold;
+  font-size: 96px;
+  line-height: 90px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+#connect-section  h1:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  #home #hero {
+    padding-bottom: 24px;
+  }
+}
